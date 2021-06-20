@@ -6,8 +6,8 @@ module.exports = {
     nsfw: false,
 
     async execute(message, args) {
-        const image = await getImage('cats')
-        console.log(message.author.user + ' requested ' + image)
-        message.channel.send(image)
+        const image = await getImage('cats');
+        console.log(message.author.username + ' requested ' + image);
+        message.channel.send(image);
     },
 };

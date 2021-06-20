@@ -29,7 +29,7 @@ client.on('message', message => {
 
     if (!client.commands.has(cmdName)) return message.delete().then(message => {
         message.channel.send("<@" + message.author.id + "> Command does not Exist.").then(message => {
-        message.delete({ timeout: 10000})
+            message.delete({ timeout: 10000 })
         });
     });
 
@@ -37,7 +37,7 @@ client.on('message', message => {
 
     if (command.nsfw && !message.channel.nsfw) return message.delete().then(message => {
         message.channel.send("<@" + message.author.id + "> This command is only allowed in **NSFW** channel.").then(message => {
-        message.delete({ timeout: 10000})
+            message.delete({ timeout: 10000 })
         });
     });
 

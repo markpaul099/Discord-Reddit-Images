@@ -6,7 +6,7 @@ module.exports = {
     nsfw: false,
 
     async execute(message, args) {
-        const image = await getImage('spaceporn')
+        const image = await getImage('spaceporn');
         console.log(message.author.username + " requested " + image);
         message.channel.send(image);
     },
