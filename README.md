@@ -28,7 +28,7 @@ A Discord Bot that sends random Images from specific subreddit.
 >r/animeart 
 
 ### Memes
->r/dankmemes 
+>r/dankmemes  
 >r/me_irl  
 >r/memes  
 >r/funny  
@@ -39,6 +39,6 @@ A Discord Bot that sends random Images from specific subreddit.
 >r/space  
 
 ### NSFW
-- only works in NSFW channel
+only works in NSFW channel
 >r/porn  
 >r/pussy   
