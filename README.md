@@ -15,7 +15,7 @@ A Discord Bot that sends random Images from specific subreddit.
 ### Commands  
 
 ## General
->help - commands   
+>help - commands  
 >ping - Pong!   
 
 ### Animals
@@ -37,6 +37,6 @@ A Discord Bot that sends random Images from specific subreddit.
 >r/space  
 
 ### NSFW
-only works in NSFW channel.
+- only works in NSFW channel.  
 >r/porn  
->r/pussy   
+>r/pussy  
