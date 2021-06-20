@@ -12,4 +12,4 @@ module.exports = {
     },
 };
 
-//Place the command inside commands subfolder 
+//Place the command.js inside commands subfolder example{./commands/folder}
