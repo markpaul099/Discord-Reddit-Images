@@ -1,5 +1,5 @@
 # Discord-Reddit-Images
-A Discord Bot that sends random Images from specific subreddit.
+A Discord Bot that sends random Images from specific Subreddit.
 
 ### Instructions for running
 
