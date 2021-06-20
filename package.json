@@ -1,7 +1,7 @@
 {
     "name": "reddit-image-post",
     "version": "1.0.0",
-    "description": "Discord bot that sends random post/image from specific Subreddit",
+    "description": "A Discord Bot that sends random images from specific Subreddit",
     "main": "index.js",
     "Author": "MarKPauL",
     "dependencies": {

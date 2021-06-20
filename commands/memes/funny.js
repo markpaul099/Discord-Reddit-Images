@@ -1,12 +1,12 @@
 const { getImage } = require('random-reddit')
 
 module.exports = {
-    name: 'me_irl',
-    description: 'Me_IRL',
+    name: 'funny',
+    description: 'Funny Images',
     nsfw: false,
 
     async execute(message, args) {
-        const image = await getImage('me_irl');
+        const image = await getImage('funny');
         console.log(message.author.username + " requested " + image);
         message.channel.send(image);
     },

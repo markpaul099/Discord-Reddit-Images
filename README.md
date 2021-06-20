@@ -1,5 +1,5 @@
 # Discord-Reddit-Images
-A Discord Bot that sends random Images from specified subreddit.
+A Discord Bot that sends random Images from specific subreddit.
 
 ### Instructions for building and running
 
@@ -19,16 +19,26 @@ A Discord Bot that sends random Images from specified subreddit.
 ### Commands
 
 ### Animals
->r/cats
+>r/cats  
+>r/panda  
+>r/dogs
 
 #### Anime
->r/animemes
+>r/animemes 
+>r/animeart 
 
 ### Memes
->r/dankmemes
->r/me_irl
->r/memes
+>r/dankmemes 
+>r/me_irl  
+>r/memes  
+>r/funny  
+
 
 ### Scenary
->r/earth
->r/space
+>r/earth  
+>r/space  
+
+### NSFW
+- only works in NSFW channel
+>r/porn  
+>r/pussy   
