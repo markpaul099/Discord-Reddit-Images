@@ -5,7 +5,7 @@ A Discord Bot that sends random Images from specific Subreddit.
 
 1. Clone/Download this repository
 2. Open a terminal inside the Bot's folder and run 
->npm install
+>npm install  
 3. Rename "example.config.json" to "config.json" 
  - open "config.json" and replace "YOUR_DISCORD_BOT_TOKEN_HERE" with your Discord Token.
 4. To start the Bot open terminal and run
@@ -16,7 +16,7 @@ A Discord Bot that sends random Images from specific Subreddit.
 
 ## General
 >r/coinflip - Flip a Coin!
->r/help - Commands  
+>r/help - Commands     
 >r/ping - Bot's Ping  
 
 ### Animals
