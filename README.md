@@ -31,7 +31,7 @@ A Discord Bot that sends random Images from specific Subreddit.
 >r/dankmemes  
 >r/funny  
 >r/meirl  
->r/memes  
+>r/memes - dankmemes/memes/me_irl in one.  
 
 ### Scenary
 >r/earth  
