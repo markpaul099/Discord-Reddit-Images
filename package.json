@@ -3,11 +3,30 @@
     "version": "1.0.0",
     "description": "A Discord Bot that sends random images from specific Subreddit",
     "main": "index.js",
-    "Author": "MarKPauL",
+    "Author": "markpaul099",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/markpaul099/Discord-Reddit-Images#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/markpaul099/Discord-Reddit-Images.git"
+    },
+    "engines": {
+        "node": "~14.17.3",
+        "npm": "~7.20.0"
+    },
     "dependencies": {
         "async": "^3.2.0",
         "discord.js": "^12.5.3",
         "fs": "0.0.1-security",
-        "random-reddit": "^2.0.1"
-    }
+        "random-reddit": "^2.0.1",
+        "reddit-interfaces": "^1.0.7"
+    },
+    "keywords": [
+        "Discord",
+        "Bot",
+        "Reddit",
+        "image",
+        "memes",
+        "nsfw"
+    ]
 }

@@ -1,9 +1,9 @@
 const { getImage } = require('random-reddit');
-const subreddit = 'porn';
+const subreddit = 'jav';
 
 module.exports = {
-    name: 'porn',
-    description: 'Porn Image',
+    name: 'jav',
+    description: 'Japanese Porn',
     nsfw: true,
 
     async execute(message) {
@@ -13,4 +13,4 @@ module.exports = {
     },
 };
 
-// Using Embed wouldn't load some videos
+// Using Embed wouldn't' load some videos

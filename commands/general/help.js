@@ -5,16 +5,18 @@ module.exports = {
     description: 'commands',
     nsfw: false,
 
-    async execute(message, args) {
-        message.delete();
+    execute(message) {
+        message.delete(); // Deletes the message by the user
         message.channel.send({
             embed: {
+                color: 0xFF5700,
                 title: message.author.username + " used *r/help*",
                 fields: [{
                     name: "commands",
                     value: `**General**\n\
                     **${prefix}help** - this command\n\
-                    **${prefix}ping** - Pong!\n\
+                    **${prefix}coinflip** - Flip a Coin!\n\
+                    **${prefix}ping** - Bot's Ping\n\
                     \n\
                     **Animals**\n\
                     **${prefix}cats**\n\
@@ -28,7 +30,7 @@ module.exports = {
                     **${prefix}dankmemes**\n\
                     **${prefix}funny**\n\
                     **${prefix}meirl**\n\
-                    **${prefix}memes**
+                    **${prefix}memes** - dankmemes/memes/me_irl in one\n\
                     \n\
                     **Scenary**\n\
                     **${prefix}earth**\n\
@@ -37,12 +39,14 @@ module.exports = {
                     **NSFW**\n\
                     Only works in ***NSFW*** channel\n\
                     **${prefix}porn**\n\
+                    **${prefix}jav**\n\
+                    **${prefix}ass**\n\
                     **${prefix}pussy**`
                 }],
                 timestamp: new Date(),
             }
         }).then(message => {
-            message.delete({ timeout: 25000 });
+            message.delete({ timeout: 25000 }); // Automatically delete this nessage in 25 sec
         });
     }
 };

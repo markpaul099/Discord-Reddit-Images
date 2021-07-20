@@ -1,15 +1,22 @@
+const Discord = require('discord.js');
 const { getImage } = require('random-reddit');
+const subreddit = 'cats'; // type the subreddit here without "r/"
 
 module.exports = {
-    name: 'example-command', //type the exact file name here or the command wouldn't recognized by the bot, make sure to type in lowercase
-    description: 'some_description_here',
+    name: 'cats', // type the exact file name here or the command wouldn't be recognized by the bot.
+    description: 'Cat Images',
     nsfw: false,
 
-    async execute(message, args) {
-        const image = await getImage('subreddit') //type the subreddit here without "r/"
+    async execute(message) {
+        const image = await getImage(subreddit);
+        const embed = new Discord.MessageEmbed()
+            .setColor('#FF5700')
+            .setImage(image)
+            .setFooter(`Subreddit: ${subreddit}`)
+            .setTimestamp()
+        message.channel.send(embed);
         console.log(message.author.username + " requested " + image);
-        message.channel.send(image);
     },
 };
 
-//Place the command.js inside commands subfolder example{./commands/folder}
+// Place the command.js inside commands subfolder example "/commands/folder/command.js"
