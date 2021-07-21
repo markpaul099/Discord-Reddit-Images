@@ -10,10 +10,6 @@
         "type": "git",
         "url": "https://github.com/markpaul099/Discord-Reddit-Images.git"
     },
-    "engines": {
-        "node": "~14.17.3",
-        "npm": "~7.20.0"
-    },
     "dependencies": {
         "async": "^3.2.0",
         "discord.js": "^12.5.3",
