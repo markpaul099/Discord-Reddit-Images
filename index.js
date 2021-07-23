@@ -40,7 +40,9 @@ client.on('message', message => {
         command.execute(message, args);
     } catch (error) {
         console.log(error);
-        message.channel.send('There was an error trying to execute that command.');
+        message.channel.send('There was an error trying to execute that command.').then(message => {
+            message.delete({ timeout: 5000 })
+        });
     }
 });
 
