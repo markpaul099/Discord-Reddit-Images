@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const { getImage } = require('random-reddit');
+const { getPost } = require('random-reddit');
 const subreddit = ['memes', 'me_irl', 'dankmemes'];
 
 module.exports = {
@@ -9,13 +9,29 @@ module.exports = {
 
     async execute(message) {
         const result = subreddit[Math.floor(Math.random() * subreddit.length)];
-        const image = await getImage(result);
+        const post = await getPost(result);
         const embed = new Discord.MessageEmbed()
+            .setAuthor(`u/${post.author}`, 'https://www.redditinc.com/assets/images/site/reddit-logo.png')
+            .setTitle(post.title)
+            .setURL(`https://www.reddit.com${post.permalink}`)
             .setColor('#FF5700')
-            .setImage(image)
-            .setFooter(`Subreddit: ${result}`)
+            .setImage(post.url)
+            .setDescription(`Comments: ${post.num_comments}`)
+            .setFooter(`Subreddit: r/${result}`)
             .setTimestamp()
-        console.log(message.author.username + " requested " + image);
+                if(post.is_video) {
+                    embed.addFields({name: `\u200b`, value: `[Open Video](${post.url})`})
+                    embed.setImage()
+                }
+                if(post.selftext) {
+                    embed.addFields({name: `\u200b`, value: `${post.selftext}`})
+                    embed.setImage()
+                }
+                if(post.is_gallery) {
+                    embed.addFields({name: `\u200b`, value: `[Open Gallery](${post.url})`})
+                    embed.setImage()
+                }
         message.channel.send(embed);
+        console.log(`${message.author.username} requested https://www.reddit.com${post.permalink}`);
     },
 };

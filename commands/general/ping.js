@@ -4,6 +4,6 @@ module.exports = {
     nsfw: false,
 
     execute(message, client) {
-        message.channel.send("Bot Ping = " + `\`${client.ws.ping} ms\``).catch(console.error);
+        message.channel.send(`Bot's Ping = ${client.ws.ping} ms`).catch(console.error);
     },
 };

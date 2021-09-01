@@ -1,11 +1,11 @@
 # Discord-Reddit-Images
-A Discord Bot that sends random Images from specific Subreddit.
+A Discord Bot that sends random Images from specific subreddit.
 
 ### Instructions for running
 
 1. Clone/Download this repository
-2. Open a terminal inside the Bot's folder and run 
->npm install  
+2. Open a new terminal and run 
+>npm install
 3. Rename "example.config.json" to "config.json" 
  - open "config.json" and replace "YOUR_DISCORD_BOT_TOKEN_HERE" with your Discord Token.
 4. To start the Bot open terminal and run
@@ -14,30 +14,31 @@ A Discord Bot that sends random Images from specific Subreddit.
 
 ### Commands  
 
-## General
+## General:
 >r/coinflip - Flip a Coin!  
->r/help - Commands     
->r/ping - Bot's Ping  
+>help - commands  
+>ping - Bot's Ping   
 
-### Animals
+### Animals:
 >r/cats  
->r/dogs  
+>r/dogs
+>r/rabbits  
 
-#### Anime
+#### Anime:
 >r/animeart  
 >r/animemes  
 
-### Memes
+### Memes:
 >r/dankmemes  
 >r/funny  
 >r/meirl  
->r/memes - dankmemes/memes/me_irl in one.  
+>r/memes  
 
-### Scenary
+### Scenary:
 >r/earth  
 >r/space  
 
-### NSFW
+### NSFW:
 - only works in NSFW channel.  
 >r/ass  
 >r/jav  

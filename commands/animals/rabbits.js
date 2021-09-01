@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
-const { getPost } = require('random-reddit')
-const subreddit = 'dankmemes';
+const { getPost } = require('random-reddit');
+const subreddit = 'rabbits';
 
 module.exports = {
-    name: 'dankmemes',
-    description: 'DankMemes',
+    name: 'rabbits',
+    description: 'rabbits Images',
     nsfw: false,
 
     async execute(message) {
