@@ -16,8 +16,8 @@ A Discord Bot that sends random Images/Post from specific subreddit.
 
 ## General
 >r/coinflip - Flip a Coin!  
->help - commands  
->ping - Bot's Ping   
+>r/help - commands  
+>r/ping - Bot's Ping   
 
 ### Animals
 >r/cats  
