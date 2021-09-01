@@ -24,7 +24,7 @@ A Discord Bot that sends random Images/Post from specific subreddit.
 >r/dogs
 >r/rabbits  
 
-#### Anime
+### Anime
 >r/animeart  
 >r/animemes  
 
