@@ -14,31 +14,31 @@ A Discord Bot that sends random Images/Post from specific subreddit.
 
 ### Commands  
 
-## General:
+## General
 >r/coinflip - Flip a Coin!  
 >help - commands  
 >ping - Bot's Ping   
 
-### Animals:
+### Animals
 >r/cats  
 >r/dogs
 >r/rabbits  
 
-#### Anime:
+#### Anime
 >r/animeart  
 >r/animemes  
 
-### Memes:
+### Memes
 >r/dankmemes  
 >r/funny  
 >r/meirl  
 >r/memes  
 
-### Scenary:
+### Scenary
 >r/earth  
 >r/space  
 
-### NSFW:
+### NSFW
 - only works in NSFW channel.  
 >r/ass  
 >r/jav  
