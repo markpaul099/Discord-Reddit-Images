@@ -18,18 +18,18 @@ module.exports = {
             .setDescription(`Comments: ${post.num_comments}`)
             .setFooter(`Subreddit: r/${subreddit}`)
             .setTimestamp()
-                if(post.is_video) {
-                    embed.addFields({name: `\u200b`, value: `[Open Video](${post.url})`})
-                    embed.setImage()
-                }
-                if(post.selftext) {
-                    embed.addFields({name: `\u200b`, value: `${post.selftext}`})
-                    embed.setImage()
-                }
-                if(post.is_gallery) {
-                    embed.addFields({name: `\u200b`, value: `[Open Gallery](${post.url})`})
-                    embed.setImage()
-                }
+        if (post.is_video) {
+            embed.addFields({ name: `\u200b`, value: `[Open Video](${post.url})` })
+            embed.setImage()
+        }
+        if (post.selftext) {
+            embed.addFields({ name: `\u200b`, value: `${post.selftext}` })
+            embed.setImage()
+        }
+        if (post.is_gallery) {
+            embed.addFields({ name: `\u200b`, value: `[Open Gallery](${post.url})` })
+            embed.setImage()
+        }
         message.channel.send(embed);
         console.log(`${message.author.username} requested https://www.reddit.com${post.permalink}`);
     },
